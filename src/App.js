@@ -1,13 +1,18 @@
-import logo from './planet.png';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import NavLink from './components/NavLink';
+import Rockets from './components/Rockets';
+import Missions from './components/Missions';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <BrowserRouter>
+    <NavLink />
+    <Routes>
+      <Route path="/rockets" element={<Rockets />} />
+      <Route path="/missions" element={<Missions />} />
+      <Route path="*" element={<p>Path is not resolved</p>} />
+    </Routes>
+  </BrowserRouter>
+);
 
 export default App;

@@ -25,3 +25,25 @@ code {
     'Courier New',
     monospace;
 }
+
+.App-logo {
+  
+}
+
+.navLink {
+  padding: 24px 4%;
+  background-color: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  display: flex;
+  align-items: center;
+  grid-gap: 40px;
+  gap: 40px;
+}
+
+.navMenu {
+  display: flex;
+  flex-grow: 1;
+  list-style: none;
+  gap: 40px;
+  grid-gap: 40px;
+}
