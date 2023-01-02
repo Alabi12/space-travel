@@ -13,13 +13,13 @@ const NavBar = () => (
         <NavLink
           to="/rockets"
           className="navItem"
-          activeClassName="selected"
+          activeclassname="selected"
         >
           Rockets
         </NavLink>
       </li>
       <li>
-        <NavLink to="/missions" className="navItem" activeClassName="selected">
+        <NavLink to="/missions" className="navItem" activeclassname="selected">
           Missions
         </NavLink>
       </li>
