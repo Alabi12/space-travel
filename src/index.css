@@ -27,11 +27,12 @@ code {
 }
 
 .App-logo {
-  
+  height: 2rem;
+  width: 100%;
 }
 
-.navLink {
-  padding: 24px 4%;
+.navBar {
+  padding: 10px 50px;
   background-color: #fff;
   border-bottom: 1px solid #e8e8e8;
   display: flex;
@@ -46,4 +47,12 @@ code {
   list-style: none;
   gap: 40px;
   grid-gap: 40px;
+}
+
+.navItem {
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: underline;
 }
