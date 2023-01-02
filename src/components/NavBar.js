@@ -4,7 +4,7 @@ import logo from './planet.png';
 
 const NavBar = () => (
   <nav className="navBar">
-    <a href="/home">
+    <a href="/rockets">
       <img src={logo} className="App-logo" alt="logo" />
     </a>
     <h1>Space Travelers Hub</h1>

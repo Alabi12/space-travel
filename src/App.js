@@ -1,34 +1,19 @@
 import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import axios from 'axios';
 import NavBar from './components/NavBar';
 import Rockets from './components/Rockets';
 import Missions from './components/Missions';
-
-import { getRocketsAction } from './redux/rockets/rockets';
-
-const url = 'https://api.spacexdata.com/v3/rockets';
-
-const getFromAPI = () => async (dispatch) => {
-  const sendRequest = async () => {
-    await axios.get(`${url}`)
-      .then((response) => {
-        const data = response.data || null;
-        const rockets = data; // MUST transform to ARRAY
-        dispatch(getRocketsAction(rockets));
-      })
-      .catch(() => {
-      });
-  };
-  await sendRequest();
-};
+import { getRocketsFromAPI } from './components/API';
 
 const App = () => {
   const dispatch = useDispatch();
+  const rockets = useSelector((state) => state.rockets) || [];
 
   useEffect(() => {
-    dispatch(getFromAPI());
+    if (rockets.length === 0) {
+      dispatch(getRocketsFromAPI());
+    }
   }, [dispatch]);
 
   return (

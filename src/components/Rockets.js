@@ -2,18 +2,18 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 const Rockets = () => {
-  const rockets = useSelector((state) => state.rocket);
+  const rocketsState = useSelector((state) => state.rockets);
+
+  const rockets = [].concat(...rocketsState);
 
   return (
     <ul className="rocketsList">
       {rockets.map((rocket) => (
         <li key={rocket.id}>
-          <div
-            key={rocket.id}
-          >
-            {rocket[0].id}
-            {rocket[0].rocket_name}
-            {rocket[0].description}
+          <div key={rocket.id}>
+            {rocket.id}
+            {rocket.rocket_name}
+            {rocket.description}
           </div>
         </li>
       ))}
