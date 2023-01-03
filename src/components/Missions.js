@@ -1,18 +1,19 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getMissionsFromAPI } from './API';
+import { joinMissionAction, leaveMissionAction } from '../redux/missions/missions';
 
 const Missions = () => {
   const dispatch = useDispatch();
   const missionsState = useSelector((state) => state.missions) || [];
 
+  const missions = [].concat(...missionsState);
+
   useEffect(() => {
-    if (missionsState.length === 0) {
+    if (missions.length === 0) {
       dispatch(getMissionsFromAPI());
     }
-  }, [dispatch, missionsState.length]);
-
-  const missions = [].concat(...missionsState);
+  }, [dispatch, missions.length]);
 
   return (
     <div className="missionsList">
@@ -26,9 +27,12 @@ const Missions = () => {
         <div className="missionRow" key={mission.mission_id}>
           <div className="missionName">{mission.mission_name}</div>
           <div className="missionDescr">{mission.description}</div>
-          <div className="missionStatus">Status</div>
+          {mission.reserved ? <span className="missiomStatusTrue">Active Member</span>
+            : <span className="missiomStatusFalse">NOT A MEMBER</span>}
           <div className="missionBtn">
-            <button type="button">Join Mission</button>
+            {mission.reserved
+              ? <button type="button" onClick={() => dispatch(leaveMissionAction(mission.mission_id))}>Leave Mission</button>
+              : <button type="button" onClick={() => dispatch(joinMissionAction(mission.mission_id))}>Join Mission</button>}
           </div>
         </div>
       ))}

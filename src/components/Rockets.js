@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { reserveRocketsAction } from '../redux/rockets/rockets';
+import { reserveRocketAction, cancelRocketAction } from '../redux/rockets/rockets';
 
 const Rockets = () => {
   const dispatch = useDispatch();
@@ -22,17 +22,28 @@ const Rockets = () => {
           <div className="rocketDetails">
             <h3 className="rocketName">{rocket.rocket_name}</h3>
             <div>
-              {rocket.reserved ? <i className="rocketStatus">Reserved</i> : ''}
-
-              <i className="rocketDescr">{rocket.description}</i>
+              {rocket.reserved ? <span className="rocketStatus">Reserved</span> : ''}
+              <span className="rocketDescr">{rocket.description}</span>
             </div>
-            <button
-              onClick={() => dispatch(reserveRocketsAction(rocket.id))}
-              className="rocketBtn"
-              type="button"
-            >
-              Reserve Rocket
-            </button>
+            {rocket.reserved
+              ? (
+                <button
+                  onClick={() => dispatch(cancelRocketAction(rocket.id))}
+                  className="rocketBtn"
+                  type="button"
+                >
+                  Cancel Reservation
+                </button>
+              )
+              : (
+                <button
+                  onClick={() => dispatch(reserveRocketAction(rocket.id))}
+                  className="rocketBtn"
+                  type="button"
+                >
+                  Reserve Rocket
+                </button>
+              )}
           </div>
         </li>
       ))}

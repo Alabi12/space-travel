@@ -68,18 +68,9 @@ code {
 }
 
 .rocketStatus {
-  font-style: normal;
   color: #fff;
   background-color: rgb(24, 162, 184);
   margin-right: 10px;
-}
-
-.hide {
-  display: none;
-}
-
-.rocketDescr {
-  font-style: normal;
 }
 
 .rocketBtn {
