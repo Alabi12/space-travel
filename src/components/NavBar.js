@@ -4,7 +4,7 @@ import logo from './planet.png';
 
 const NavBar = () => (
   <nav className="navBar">
-    <a href="/rockets">
+    <a href="/">
       <img src={logo} className="App-logo" alt="logo" />
     </a>
     <h1>Space Travelers Hub</h1>
@@ -13,14 +13,19 @@ const NavBar = () => (
         <NavLink
           to="/rockets"
           className="navItem"
-          activeclassname="selected"
+          activeclassname="active"
         >
           Rockets
         </NavLink>
       </li>
       <li>
-        <NavLink to="/missions" className="navItem" activeclassname="selected">
+        <NavLink to="/missions" className="navItem" activeclassname="active">
           Missions
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to="/myprofile" className="navItem" activeclassname="active">
+          My Profile
         </NavLink>
       </li>
     </ul>

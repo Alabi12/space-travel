@@ -9,11 +9,15 @@ const Rockets = () => {
   return (
     <ul className="rocketsList">
       {rockets.map((rocket) => (
-        <li key={rocket.id}>
-          <div key={rocket.id}>
-            {rocket.id}
-            {rocket.rocket_name}
-            {rocket.description}
+        <li className="rocketItem" key={rocket.id}>
+          <div><img className="rocketImage" src={rocket.flickr_images[0]} alt="rocket" /></div>
+          <div className="rocketDetails">
+            <h3 className="rocketName">{rocket.rocket_name}</h3>
+            <div>
+              <i className="rocketStatus hide">Reserved</i>
+              <i className="rocketDescr">{rocket.description}</i>
+            </div>
+            <button className="rocketBtn" type="button">Reserve Rocket</button>
           </div>
         </li>
       ))}
