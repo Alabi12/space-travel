@@ -93,3 +93,11 @@ code {
   background-color: rgb(242, 242, 242);
   color: #000;
 }
+
+/* Profile css */
+
+.myProfile {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
