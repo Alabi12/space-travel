@@ -7,7 +7,7 @@ const NavBar = () => (
     <a href="/">
       <img src={logo} className="App-logo" alt="logo" />
     </a>
-    <h1>Space Travelers Hub</h1>
+    <h1>Space Travelers` Hub</h1>
     <ul className="navMenu">
       <li>
         <NavLink
@@ -24,7 +24,7 @@ const NavBar = () => (
         </NavLink>
       </li>
       <li>
-        <NavLink to="/myprofile" className="navItem" activeclassname="active">
+        <NavLink to="/myprofile" className="navItem navItemMyProfile" activeclassname="active">
           My Profile
         </NavLink>
       </li>

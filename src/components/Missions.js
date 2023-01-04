@@ -27,12 +27,12 @@ const Missions = () => {
         <div className="missionRow" key={mission.mission_id}>
           <div className="missionName">{mission.mission_name}</div>
           <div className="missionDescr">{mission.description}</div>
-          {mission.reserved ? <span className="missiomStatusTrue">Active Member</span>
-            : <span className="missiomStatusFalse">NOT A MEMBER</span>}
-          <div className="missionBtn">
+          {mission.reserved ? <div><span className="missionStatusTrue">Active Member</span></div>
+            : <div><span className="missionStatusFalse">NOT A MEMBER</span></div>}
+          <div className="missionBtnContainer">
             {mission.reserved
-              ? <button type="button" onClick={() => dispatch(leaveMissionAction(mission.mission_id))}>Leave Mission</button>
-              : <button type="button" onClick={() => dispatch(joinMissionAction(mission.mission_id))}>Join Mission</button>}
+              ? <button type="button" className="missionBtnLeave" onClick={() => dispatch(leaveMissionAction(mission.mission_id))}>Leave Mission</button>
+              : <button type="button" className="missionBtnJoin" onClick={() => dispatch(joinMissionAction(mission.mission_id))}>Join Mission</button>}
           </div>
         </div>
       ))}
