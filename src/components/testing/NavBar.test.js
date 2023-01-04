@@ -1,15 +1,16 @@
-import TestRenderer from 'react-test-renderer';
-import BrowserRouter from 'react-router-dom';
+import React from 'react';
+import renderer from 'react-test-renderer';
+import { MemoryRouter as Router } from 'react-router-dom';
 import NavBar from '../NavBar';
 
-describe('test of nav bar component', () => {
-  test('compare with snapshot', () => {
-    const myRenderer = TestRenderer.create(
-      <BrowserRouter>
+describe('Testing NavBar component', () => {
+  test('Snapshot testing', () => {
+    const myRenderer = renderer.create(
+      <Router>
         <NavBar />
-      </BrowserRouter>,
+      </Router>,
     );
-    const TestComponent = myRenderer.toJSON();
-    expect(TestComponent).toMatchSnapshot();
+    const testComponent = myRenderer.toJSON();
+    expect(testComponent).toMatchSnapshot();
   });
 });

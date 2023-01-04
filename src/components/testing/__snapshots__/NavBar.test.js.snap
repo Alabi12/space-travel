@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing NavBar component Snapshot testing 1`] = `
+<nav
+  className="navBar"
+>
+  <a
+    href="/"
+  >
+    <img
+      alt="logo"
+      className="App-logo"
+      src="planet.png"
+    />
+  </a>
+  <h1>
+    Space Travelers\` Hub
+  </h1>
+  <ul
+    className="navMenu"
+  >
+    <li>
+      <a
+        activeclassname="active"
+        className="navItem"
+        href="/rockets"
+        onClick={[Function]}
+      >
+        Rockets
+      </a>
+    </li>
+    <li>
+      <a
+        activeclassname="active"
+        className="navItem"
+        href="/missions"
+        onClick={[Function]}
+      >
+        Missions
+      </a>
+    </li>
+    <li>
+      <a
+        activeclassname="active"
+        className="navItem navItemMyProfile"
+        href="/myprofile"
+        onClick={[Function]}
+      >
+        My Profile
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`test of nav bar component compare with snapshot 1 1`] = `
+<nav
+  className="navBar"
+>
+  <a
+    href="/"
+  >
+    <img
+      alt="logo"
+      className="App-logo"
+      src="planet.png"
+    />
+  </a>
+  <h1>
+    Space Travelers\` Hub
+  </h1>
+  <ul
+    className="navMenu"
+  >
+    <li>
+      <a
+        activeclassname="active"
+        className="navItem"
+        href="/rockets"
+        onClick={[Function]}
+      >
+        Rockets
+      </a>
+    </li>
+    <li>
+      <a
+        activeclassname="active"
+        className="navItem"
+        href="/missions"
+        onClick={[Function]}
+      >
+        Missions
+      </a>
+    </li>
+    <li>
+      <a
+        activeclassname="active"
+        className="navItem navItemMyProfile"
+        href="/myprofile"
+        onClick={[Function]}
+      >
+        My Profile
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
