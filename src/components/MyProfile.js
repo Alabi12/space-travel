@@ -1,7 +1,12 @@
 import React from 'react';
+import MyProfileMissions from './MyProfileMissions';
+import MyProfileRockets from './MyProfileRockets';
 
 const MyProfile = () => (
-  <div>My Missions | My Rockets</div>
+  <div className="myProfile">
+    <MyProfileMissions />
+    <MyProfileRockets />
+  </div>
 );
 
 export default MyProfile;
