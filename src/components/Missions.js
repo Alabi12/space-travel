@@ -27,8 +27,8 @@ const Missions = () => {
         <div className="missionRow" key={mission.mission_id}>
           <div className="missionName">{mission.mission_name}</div>
           <div className="missionDescr">{mission.description}</div>
-          {mission.reserved ? <div><span className="missionStatusTrue">Active Member</span></div>
-            : <div><span className="missionStatusFalse">NOT A MEMBER</span></div>}
+          {mission.reserved ? <div><button type="button" className="missionStatusTrue">Active Member</button></div>
+            : <div><button type="button" className="missionStatusFalse">NOT A MEMBER</button></div>}
           <div className="missionBtnContainer">
             {mission.reserved
               ? <button type="button" className="missionBtnLeave" onClick={() => dispatch(leaveMissionAction(mission.mission_id))}>Leave Mission</button>

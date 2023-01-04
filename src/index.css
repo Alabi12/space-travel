@@ -109,10 +109,11 @@ body {
 .missionStatusFalse {
   text-align: center;
   position: relative;
-  top: 30%;
+  top: 20%;
   color: #fff;
-  padding: 3px;
+  padding: 10px;
   border-radius: 10%;
+  border: 0;
 }
 
 .missionStatusTrue {
@@ -129,6 +130,7 @@ body {
   position: relative;
   top: 20%;
   padding: 10px;
+  border-radius: 10%;
 }
 
 .missionBtnLeave {
