@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    'Courier New',
+    monospace;
+}
+
+.App-logo {
+  height: 2rem;
+  width: 100%;
+}
+
+.navBar {
+  padding: 10px 50px;
+  background-color: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  display: flex;
+  align-items: center;
+  grid-gap: 40px;
+  gap: 40px;
+}
+
+.navMenu {
+  display: flex;
+  flex-grow: 1;
+  list-style: none;
+  gap: 40px;
+  grid-gap: 40px;
+}
+
+.navItem {
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.rocketItem {
+  list-style: none;
+  display: flex;
+}
+
+.rocketImage {
+  width: 18rem;
+  margin: 20px;
+}
+
+.rocketStatus {
+  color: #fff;
+  background-color: rgb(24, 162, 184);
+  margin-right: 10px;
+}
+
+.rocketBtn {
+  margin-top: 20px;
+}
+
+.missionsList {
+  padding: 0 50px 0 50px;
+}
+
+.missionRow,
+.missionHeader {
+  display: grid;
+  grid-template-columns: 10% 65% 10% 15%;
+  grid-gap: 10px;
+  border: 1px solid rgb(222, 226, 230);
+}
+
+.missionRow:nth-child(even) {
+  background-color: rgb(242, 242, 242);
+  color: #000;
+}
