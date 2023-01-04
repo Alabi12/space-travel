@@ -1,8 +1,127 @@
-# Getting Started with Create React App
+<div align="center">
+  <h1><b>Space Traveler's Hub</b></h1>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+
+# 📗 Table of Contents
+
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+  - [Tech Stack](#tech-stack)
+  - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
+  - [Install](#install)
+  - [Getting Started with Create React App](#getting-started-React)
+  - [Available Scripts](#available-scripts)
+  - [Learn More](#learn-more)
+- [👥 Author](#author)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
+
+<!-- PROJECT DESCRIPTION -->
+
+# 📖 Space Traveler's Hub <a name="about-project"></a>
+
+**Space Traveler's Hub**  is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions. Application is working with the real live data from the SpaceX API.
+
+# 👁‍🗨 Preview
+
+![image](https://user-images.githubusercontent.com/106581139/210587235-4eb8bd8f-40a5-4271-bc65-537d0f501e5b.png)
+
+
+## 🛠 Built With <a name="built-with"></a>
+
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Languages</summary>
+  <ul>
+    <li><a href="https://html.spec.whatwg.org/">HTML5 / CSS / JavaScript</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>IDE</summary>
+  <ul>
+    <li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Hosting</summary>
+  <ul>
+    <li><a href="https://github.com/">GitHub</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Library</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React</a></li>
+  </ul>
+</details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+- **Display a list of rockets**
+- **Display a list of missions**
+- **Display a Profile**
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+- [Live Demo on Pages](https://sergskol.github.io/space-travel/public/)
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps:
+- Get a copy of the project
+- Come into the project directory
+- Open the project using code editor of your choice
+- Open your prefered browser
+
+### Prerequisites <a name="prerequisites"></a>
+
+In order to run this project:
+- You need a GitHub account.
+- You need to have a Git client installed on your computer.
+- You need to have a copy of the HTML CSS website codebase on your computer.
+- You need a code Editor of your choice.
+
+### Setup <a name="setup"></a>
+
+Clone this repository to your desired folder:
+
+```sh
+  cd my-folder
+  git clone https://github.com/SergSkol/space-travel.git
+```
+
+### Install <a name="install"></a>
+
+Install all the dependencys required for the website, by using the command below
+
+```sh
+  cd space-travel
+  npm install
+```
+
+# Getting Started with Create React App <a name="getting-started-React"></a>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Available Scripts <a name="available-scripts"></a>
 
 In the project directory, you can run:
 
@@ -39,13 +158,14 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Learn More <a name="learn-more"></a>
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### Code Splitting
+<a name="code-splitting"></a>
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
@@ -68,3 +188,52 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="author"></a>
+
+👤 **Robert Okoe Alabi**
+- GitHub: [@Alabi12](https://github.com/Alabi12)
+- Twitter: [@wolo_robert](https://twitter.com/wolo_robert)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/robert-alabi/)
+
+👤 **Sergiy Shkolnik**
+- GitHub: [@SergSkol](https://github.com/SergSkol)
+- Twitter: [@sps676](https://twitter.com/sps676)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/sergskol/)
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **Advanced styles**
+- [ ] **More testing with Jest**
+- [ ] **Responsive design in mobile version**
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+Give a ⭐️ if you like this project!
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank:
+- [Microverse](www.microverse.com)
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
