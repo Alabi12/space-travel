@@ -8,12 +8,12 @@ const MyProfileMissions = () => {
 
   return (
     <div className="myProfileMissions">
-      <div className="myMission">My Missions</div>
-      <ul>
+      <h3 className="myMissionsHeader">My Missions</h3>
+      <ul className="myMissionsList">
         {missions
           .filter((mission) => mission.reserved)
           .map((filteredMission) => (
-            <li key={filteredMission.mission_id}>
+            <li className="myMissionItem" key={filteredMission.mission_id}>
               {filteredMission.mission_name}
             </li>
           ))}

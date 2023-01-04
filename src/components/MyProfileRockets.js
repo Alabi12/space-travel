@@ -8,12 +8,12 @@ const MyProfile = () => {
 
   return (
     <div className="myProfileRockets">
-      <div className="myRocket">My Rockets</div>
-      <ul>
+      <h3 className="myRocketHeader">My Rockets</h3>
+      <ul className="myRocketsList">
         {rockets
           .filter((rocket) => rocket.reserved)
           .map((filteredRocket) => (
-            <li key={filteredRocket.id}>{filteredRocket.rocket_name}</li>
+            <li className="myRocketItem" key={filteredRocket.id}>{filteredRocket.rocket_name}</li>
           ))}
       </ul>
     </div>

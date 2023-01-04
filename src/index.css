@@ -16,16 +16,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
-}
-
 .App-logo {
   height: 2rem;
   width: 100%;
@@ -37,24 +27,31 @@ code {
   border-bottom: 1px solid #e8e8e8;
   display: flex;
   align-items: center;
-  grid-gap: 40px;
-  gap: 40px;
+  gap: 20px;
 }
 
 .navMenu {
   display: flex;
   flex-grow: 1;
   list-style: none;
-  gap: 40px;
-  grid-gap: 40px;
+  justify-content: flex-end;
 }
 
 .navItem {
   text-decoration: none;
+  padding: 0 20px 0 20px;
+}
+
+.navItemMyProfile {
+  border-left: 2px solid rgb(222, 226, 230);
 }
 
 .active {
   text-decoration: underline;
+}
+
+.rocketsList {
+  padding-right: 40px;
 }
 
 .rocketItem {
@@ -73,8 +70,17 @@ code {
   margin-right: 10px;
 }
 
-.rocketBtn {
+.rocketBtnCancel,
+.rocketBtnReserve {
   margin-top: 20px;
+  padding: 10px;
+  border-radius: 5%;
+  border: 1px solid rgb(222, 226, 230);
+}
+
+.rocketBtnReserve {
+  color: #fff;
+  background-color: rgb(24, 162, 184);
 }
 
 .missionsList {
@@ -89,9 +95,47 @@ code {
   border: 1px solid rgb(222, 226, 230);
 }
 
+.missionHeader {
+  font-weight: 700;
+  padding: 10px 0 10px 0;
+}
+
 .missionRow:nth-child(even) {
   background-color: rgb(242, 242, 242);
   color: #000;
+}
+
+.missionStatusTrue,
+.missionStatusFalse {
+  text-align: center;
+  position: relative;
+  top: 20%;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10%;
+  border: 0;
+}
+
+.missionStatusTrue {
+  background-color: rgb(24, 162, 184);
+}
+
+.missionStatusFalse {
+  background-color: dimgrey;
+}
+
+.missionBtnLeave,
+.missionBtnJoin {
+  text-align: center;
+  position: relative;
+  top: 20%;
+  padding: 10px;
+  border-radius: 10%;
+}
+
+.missionBtnLeave {
+  color: red;
+  border: 1px solid red;
 }
 
 /* Profile css */
@@ -100,4 +144,22 @@ code {
   display: flex;
   justify-content: center;
   gap: 2rem;
+  padding: 0 50px 0 50px;
+}
+
+.myProfileMissions,
+.myProfileRockets {
+  width: 50%;
+}
+
+.myMissionsList,
+.myRocketsList {
+  padding-left: 0;
+}
+
+.myMissionItem,
+.myRocketItem {
+  list-style: none;
+  border: 1px solid rgb(222, 226, 230);
+  padding: 10px 0 10px 20px;
 }
