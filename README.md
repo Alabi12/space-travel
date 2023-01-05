@@ -79,7 +79,7 @@
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-- [Live Demo on Pages](https://sergskol.github.io/space-travel/public/)
+- [Live Demo on Versel](https://space-travel-pearl.vercel.app/)
 
 <!-- GETTING STARTED -->
 
